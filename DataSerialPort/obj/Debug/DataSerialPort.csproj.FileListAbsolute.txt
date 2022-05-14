@@ -1,0 +1,6 @@
+D:\develop\WPF\practice\mytodo\MyToDo\DataSerialPort\bin\Debug\DataSerialPort.dll
+D:\develop\WPF\practice\mytodo\MyToDo\DataSerialPort\bin\Debug\DataSerialPort.pdb
+D:\develop\WPF\practice\mytodo\MyToDo\DataSerialPort\obj\Debug\DataSerialPort.csproj.CoreCompileInputs.cache
+D:\develop\WPF\practice\mytodo\MyToDo\DataSerialPort\obj\Debug\DataSerialPort.dll
+D:\develop\WPF\practice\mytodo\MyToDo\DataSerialPort\obj\Debug\DataSerialPort.pdb
+D:\develop\WPF\practice\mytodo\MyToDo\DataSerialPort\obj\Debug\DataSerialPort.csproj.AssemblyReference.cache

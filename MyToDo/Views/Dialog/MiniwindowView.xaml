@@ -1,0 +1,203 @@
+﻿<UserControl
+    x:Class="MyToDo.Views.Dialog.MiniwindowView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:dialog="clr-namespace:MyToDo.ViewModels.Dialog"
+    xmlns:local="clr-namespace:MyToDo.Views.Dialog"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:prism="http://prismlibrary.com/"
+    xmlns:viewmodels="clr-namespace:MyToDo.ViewModels"
+    d:DataContext="{d:DesignInstance Type=viewmodels:MiniwindowViewModel}"
+    d:DesignHeight="160"
+    d:DesignWidth="160"
+    mc:Ignorable="d">
+    <prism:Dialog.WindowStyle>
+        <Style TargetType="Window">
+            <Setter Property="Width" Value="350" />
+            <Setter Property="Height" Value="400" />
+            <Setter Property="SizeToContent" Value="WidthAndHeight" />
+            <Setter Property="ResizeMode" Value="NoResize" />
+            <Setter Property="prism:Dialog.WindowStartupLocation" Value="CenterScreen" />
+            <Setter Property="WindowStyle" Value="None" />
+            <Setter Property="AllowsTransparency" Value="True" />
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="Topmost" Value="True" />
+        </Style>
+    </prism:Dialog.WindowStyle>
+
+    <UserControl.Background>
+        <SolidColorBrush Opacity="0.5" Color="White" />
+    </UserControl.Background>
+
+    <Grid x:Name="MoveGrid" Margin="0,0,0,38">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel x:Name="TitleBar" Grid.Row="0">
+
+            <Canvas
+                Name="TitleBorder"
+                Width="120"
+                Height="auto">
+                <Canvas.InputBindings>
+                    <MouseBinding
+                        Command="{Binding DragWindowCommand, RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=UserControl}}"
+                        CommandParameter="{Binding RelativeSource={RelativeSource Mode=FindAncestor, AncestorType=Window}}"
+                        Gesture="LeftClick" />
+                </Canvas.InputBindings>
+                <TextBlock
+                    Margin="10"
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    FontSize="18"
+                    FontWeight="Bold"
+                    Text="實時生理參數" />
+            </Canvas>
+            <Button
+                x:Name="backbtn"
+                Width="30"
+                Margin="5"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Command="{Binding ExecuteCommand}"
+                Cursor="Hand"
+                Style="{StaticResource MaterialDesignToolButton}">
+                <materialDesign:PackIcon
+                    HorizontalAlignment="Right"
+                    VerticalAlignment="Top"
+                    Kind="ExitToApp" />
+            </Button>
+        </DockPanel>
+
+
+        <StackPanel
+            Grid.Row="1"
+            Margin="0,5,0,0"
+            Orientation="Vertical">
+
+            <TextBlock
+                Margin="5"
+                HorizontalAlignment="Center"
+                Text="{Binding MouseStatus}" />
+            <Border
+                Margin="5"
+                Opacity="0.7"
+                Background="#FFD6D6D6"
+                CornerRadius="7">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect
+                                            BlurRadius="10"
+                                            ShadowDepth="1"
+                                            Color="#DDDDDD" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                        <Setter Property="Cursor" Value="Hand" />
+                    </Style>
+                </Border.Style>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Margin="5"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Kind="CardsHeart" />
+                            <TextBlock Margin="10" Text="{Binding HRData}" />
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border
+                Margin="5"
+                Opacity="0.7"
+                Background="#FFD6D6D6"
+                CornerRadius="7">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect
+                                            BlurRadius="10"
+                                            ShadowDepth="1"
+                                            Color="#DDDDDD" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                        <Setter Property="Cursor" Value="Hand" />
+                    </Style>
+                </Border.Style>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Margin="5"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Kind="LiquidSpot" />
+                            <TextBlock Margin="10" Text="{Binding SPO2Data}" />
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </Border>
+            <Border
+                Opacity="0.7"
+                Margin="5"
+                Background="#FFD6D6D6"
+                CornerRadius="7">
+                <Border.Style>
+                    <Style TargetType="Border">
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Effect">
+                                    <Setter.Value>
+                                        <DropShadowEffect
+                                            BlurRadius="10"
+                                            ShadowDepth="1"
+                                            Color="#DDDDDD" />
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </Style.Triggers>
+                        <Setter Property="Cursor" Value="Hand" />
+                    </Style>
+                </Border.Style>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                    </Grid.RowDefinitions>
+                    <Grid Grid.Row="0">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon
+                                Margin="5"
+                                HorizontalAlignment="Left"
+                                VerticalAlignment="Center"
+                                Kind="Thermometer" />
+                            <TextBlock Margin="10" Text="{Binding TempData}" />
+                        </StackPanel>
+                    </Grid>
+                </Grid>
+            </Border>
+        </StackPanel>
+    </Grid>
+</UserControl>
