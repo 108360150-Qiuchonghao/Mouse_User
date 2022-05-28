@@ -39,11 +39,10 @@
                     FontSize="15"
                     IsReadOnly="True"
                     Style="{StaticResource MaterialDesignFloatingHintTextBox}"
-                    Text="{Binding Devicepidvid}">
+                    Text="{Binding Devicepidvid}" Cursor="IBeam">
                     <TextBox.InputBindings>
                         <MouseBinding Command="{Binding ShowAddCommand}" MouseAction="LeftClick" />
                     </TextBox.InputBindings>
-
                 </TextBox>
             </StackPanel>
             <Border

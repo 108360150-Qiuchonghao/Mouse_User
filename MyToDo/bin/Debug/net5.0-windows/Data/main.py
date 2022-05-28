@@ -12,7 +12,7 @@ import sys
 a = []  # 所以你寫得時候這邊就是input的紅光參數
 b = []  # input的紅外光參數
 c = []  # input的x綠光參數
-with open('Data/WriteCsv.csv', newline='') as csvfile:
+with open('WriteCsv.csv', newline='') as csvfile:
     rows = csv.DictReader(csvfile)
     for row in rows:
         a.append(row['channel3'])  # Red

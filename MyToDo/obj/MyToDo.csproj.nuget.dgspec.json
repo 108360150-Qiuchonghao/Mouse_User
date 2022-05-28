@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo\\MyToDo.csproj": {}
+    "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo\\MyToDo.csproj": {}
   },
   "projects": {
-    "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo.Shared\\MyToDo.Shared.csproj": {
+    "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo.Shared\\MyToDo.Shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo.Shared\\MyToDo.Shared.csproj",
+        "projectUniqueName": "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo.Shared\\MyToDo.Shared.csproj",
         "projectName": "MyToDo.Shared",
-        "projectPath": "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo.Shared\\MyToDo.Shared.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo.Shared\\obj\\",
+        "projectPath": "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo.Shared\\MyToDo.Shared.csproj",
+        "packagesPath": "C:\\Users\\54732\\.nuget\\packages\\",
+        "outputPath": "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo.Shared\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\54732\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -62,20 +62,20 @@
         }
       }
     },
-    "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo\\MyToDo.csproj": {
+    "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo\\MyToDo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo\\MyToDo.csproj",
+        "projectUniqueName": "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo\\MyToDo.csproj",
         "projectName": "MyToDo",
-        "projectPath": "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo\\MyToDo.csproj",
-        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo\\obj\\",
+        "projectPath": "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo\\MyToDo.csproj",
+        "packagesPath": "C:\\Users\\54732\\.nuget\\packages\\",
+        "outputPath": "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\54732\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -90,8 +90,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo.Shared\\MyToDo.Shared.csproj": {
-                "projectPath": "D:\\develop\\WPF\\practice\\mytodo\\MouseUser\\MouseUIAdmin-main\\MyToDo.Shared\\MyToDo.Shared.csproj"
+              "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo.Shared\\MyToDo.Shared.csproj": {
+                "projectPath": "D:\\Develop\\wpf\\Mouse_User-main\\Mouse_User-main\\MyToDo.Shared\\MyToDo.Shared.csproj"
               }
             }
           }

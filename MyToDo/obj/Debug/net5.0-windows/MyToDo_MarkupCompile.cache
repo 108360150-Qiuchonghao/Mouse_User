@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\develop\WPF\practice\mytodo\MouseUser\MouseUIAdmin-main\MyToDo\obj\Debug\net5.0-windows\
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo\obj\Debug\net5.0-windows\
 MyToDo
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-D:\develop\WPF\practice\mytodo\MouseUser\MouseUIAdmin-main\MyToDo\App.xaml
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo\App.xaml
 14-1824298350
 
 67-2082564693
-244378917728
+2441590628219
 Views\AboutUsView.xaml;Views\Dialog\AddMouseUser.xaml;Views\Dialog\ChangeDeviceIDView.xaml;Views\Dialog\ExitView.xaml;Views\Dialog\MiniwindowView.xaml;Views\Icon\NotifyIconResources.xaml;Views\Icon\ProgressView.xaml;Views\IndexView.xaml;Views\LoginView.xaml;Views\MainView.xaml;Views\SettingView.xaml;Views\SysSettingView.xaml;Views\TestViews\UserDataTestView.xaml;Views\UserDataView.xaml;
 
 False

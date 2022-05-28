@@ -85,6 +85,30 @@ namespace MyToDo.ViewModels
                                 new ObservableValue(0),
                                 new ObservableValue(0),
                                 new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
+                                new ObservableValue(0),
                     }
                 }
             };
@@ -530,7 +554,7 @@ namespace MyToDo.ViewModels
                                     {
 
                                     };
-                                    for(int i = 0; i<3200;i++)
+                                    for(int i = 0; i< 3200;i++)
                                     {
                                         String IDString = _serialPort.ReadLine();
                                         string[] ppgstring = IDString.Split(':');
@@ -542,7 +566,7 @@ namespace MyToDo.ViewModels
                                             ppg.channel1 = long.Parse(Channels[1]);
                                             ppg.channel2 = long.Parse(Channels[2]);
                                             ppg.channel3 = long.Parse(Channels[3]);
-                                            if (ppg.channel1 > 500000 || ppg.channel2 > 500000 || ppg.channel3 > 500000 || ppg.channel1 < 100000 || ppg.channel2 < 100000 || ppg.channel3 < 100000)
+                                            if (ppg.channel1 > 500000 || ppg.channel2 > 500000 || ppg.channel3 > 500000 || ppg.channel1 < 50000 || ppg.channel2 < 50000 || ppg.channel3 < 50000)
                                             {
                                                 continue;
                                             }
@@ -550,36 +574,36 @@ namespace MyToDo.ViewModels
                                         }
                                         else if(ppgstring[0] == "TEMP")
                                         {
-                                            
-                                            double Hand_temp = (double.Parse(ppgstring[1]) / 10);
-                                        if (Hand_temp > 10)
-                                        {
-                                            Hand_temp = 0.0086 * (Hand_temp - 28.3) + 36.58;
-                                            ps.hand_temp = (Hand_temp).ToString("0.0");
-                                        }
-                                        else
-                                            ps.hand_temp = "--";
+           
+                                            double Hand_temp = (double.Parse(ppgstring[1]));
+                                            if (Hand_temp > 10)
+                                            {
+                                                Hand_temp = 0.0086 * (Hand_temp - 28.3) + 36.58;
+                                                ps.hand_temp = (Hand_temp).ToString("0.0");
+                                            }
+                                            else
+                                                ps.hand_temp = "--";
 
-                                            Temp = true;
+                                                Temp = true;
                                         }
                                         else if (ppgstring[0] == "HR")
                                         {
-                                            if ((float.Parse(ppgstring[1]) / 10) < 30)
-                                                ps.hr = "--";
-                                            else
-                                                ps.hr = (float.Parse(ppgstring[1]) / 10).ToString();
-                                            HR = true;
+                                            //if ((float.Parse(ppgstring[1]) / 10) < 30)
+                                            //    ps.hr = "--";
+                                            //else
+                                            //    ps.hr = (float.Parse(ppgstring[1]) / 10).ToString();
+                                            //HR = true;
                                         }
                                         else if (ppgstring[0] == "SPO2")
                                         {
-                                        if ((float.Parse(ppgstring[1]) / 10) > 30)
-                                        {
-                                            ps.spo2 = (float.Parse(ppgstring[1]) / 10).ToString();
-                                        }
-                                        else
-                                            ps.spo2 = "--";
+                                            //if ((float.Parse(ppgstring[1]) / 10) > 30)
+                                            //{
+                                            //    ps.spo2 = (float.Parse(ppgstring[1]) / 10).ToString();
+                                            //}
+                                            //else
+                                            //    ps.spo2 = "--";
                                     
-                                            b_SPO2 = true;
+                                            //    b_SPO2 = true;
                                         }
 
 
@@ -592,44 +616,47 @@ namespace MyToDo.ViewModels
                                         }
                                     }
                                 #region Python
-                                //var psi = new ProcessStartInfo();
-                                //psi.FileName = @"C:\Users\Administrator\AppData\Local\Programs\Python\Python39\python.exe";
-                                //var script = ".\\Data\\main.py";
-                                //psi.Arguments = $"\"{script}\"";
-                                //psi.UseShellExecute = false;
-                                //psi.CreateNoWindow = true;
-                                //psi.RedirectStandardOutput = true;
-                                //psi.RedirectStandardError = true;
-                                //var error = "";
-                                //var results = "";
-                                //using (var process = Process.Start(psi))
-                                //{
-                                //    error = process.StandardError.ReadToEnd();
-                                //    results = process.StandardOutput.ReadToEnd();
-                                //}
-                                //string[] str = results.Split(";");
-                                //if (str[0] != "")
-                                //{
-                                //    ps.spo2 = results.Split(';')[2];
-                                //    b_SPO2 = true;
-                                //    ps.hr = results.Split(';')[1];
-                                //    HR = true;
-                                //    //假資料
-                                //    double Hand_temp = double.Parse(ps.hand_temp);
-                                //    Hand_temp = 0.0086 * (Hand_temp - 28.3) + 36.58;
+                                var psi = new ProcessStartInfo();
+                                psi.FileName = @"D:\Develop\Python\venv\Scripts\python.exe";
+                                var script = ".\\Data\\main1.py";
+                                psi.Arguments = $"\"{script}\"";
+                                psi.UseShellExecute = false;
+                                psi.CreateNoWindow = true;
+                                psi.RedirectStandardOutput = true;
+                                psi.RedirectStandardError = true;
+                                var error = "";
+                                var results = "";
+                                using (var process = Process.Start(psi))
+                                {
+                                    error = process.StandardError.ReadToEnd();
+                                    results = process.StandardOutput.ReadToEnd();
+                                }
+                                string[] str = results.Split(";");
+                                if (str[1] != "")
+                                {
+                                    ps.spo2 = str[1];
+                                    b_SPO2 = true;
+                                    ps.hr = str[2];
+                                    HR = true;
+                                    
+                                    //假資料
+                                    //double Hand_temp = double.Parse(ps.hand_temp);
+                                    //Hand_temp = 0.0086 * (Hand_temp - 28.3) + 36.58;
 
-                                //    ps.spo2 = "97.8";
-                                //    ps.hr = "78";
-                                //    ps.hand_temp = Hand_temp.ToString();
+                                    //ps.spo2 = "97.8";
+                                    //ps.hr = "78";
+                                    //ps.hand_temp = Hand_temp.ToString();
 
-                                //}
-                                //else
-                                //    break;
+                                }
+                                else
+                                    break;
 
                                 #endregion
                             }
-                                catch
-                                { }
+                                catch(Exception ex)
+                                { 
+                                    Console.WriteLine(ex.Message);
+                                }
                                 #endregion
 
                                 #region 假的板子讀取資料
@@ -723,14 +750,19 @@ namespace MyToDo.ViewModels
                                         break;
                                 }
 
-                                //圖表添加數據
+                            //圖表添加數據
+                            if (_trend != "--")
+                            {
                                 LastHourSeries[0].Values.Add(new ObservableValue(double.Parse(_trend)));
                                 LastHourSeries[0].Values.RemoveAt(0);
-                                //如果連接中，push資料
-                                if (AppSession.IsConnected == true)
-                                    PushData(ps.hr, ps.spo2, ps.hand_temp);
-                            
                             }
+                            //如果連接中，push資料
+                                if (AppSession.IsConnected == true)
+                            { 
+                                if(ps.hr!="--" && ps.spo2 != "--"&& ps.hand_temp!="--")
+                                    PushData(ps.hr, ps.spo2, ps.hand_temp);
+                            }
+                        }
                             _serialPort.Close();
                         }
                         else
@@ -740,7 +772,7 @@ namespace MyToDo.ViewModels
                     }
                     catch (Exception ex)
                     {
-
+                         Console.WriteLine(ex.Message);
                     }
                     finally
                     {

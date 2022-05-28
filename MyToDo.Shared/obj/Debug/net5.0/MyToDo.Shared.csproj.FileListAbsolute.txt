@@ -22,3 +22,15 @@ D:\develop\WPF\practice\mytodo\MouseUser\MouseUIAdmin-main\MyToDo.Shared\bin\Deb
 D:\develop\WPF\practice\mytodo\MouseUser\MouseUIAdmin-main\MyToDo.Shared\bin\Debug\net5.0\MyToDo.Shared.pdb
 D:\develop\WPF\practice\mytodo\MouseUser\MouseUIAdmin-main\MyToDo.Shared\obj\Debug\net5.0\refint\MyToDo.Shared.dll
 D:\develop\WPF\practice\mytodo\MouseUser\MouseUIAdmin-main\MyToDo.Shared\obj\Debug\net5.0\ref\MyToDo.Shared.dll
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\bin\Debug\net5.0\MyToDo.Shared.deps.json
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\bin\Debug\net5.0\MyToDo.Shared.dll
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\bin\Debug\net5.0\MyToDo.Shared.pdb
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.csproj.AssemblyReference.cache
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.AssemblyInfoInputs.cache
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.AssemblyInfo.cs
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.csproj.CoreCompileInputs.cache
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.dll
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\obj\Debug\net5.0\refint\MyToDo.Shared.dll
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\obj\Debug\net5.0\MyToDo.Shared.pdb
+D:\Develop\wpf\Mouse_User-main\Mouse_User-main\MyToDo.Shared\obj\Debug\net5.0\ref\MyToDo.Shared.dll
