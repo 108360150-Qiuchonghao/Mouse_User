@@ -591,43 +591,43 @@ namespace MyToDo.ViewModels
                                             csv.WriteRecords(records);
                                         }
                                     }
-                                    #region Python
-                                    //var psi = new ProcessStartInfo();
-                                    //psi.FileName = @"C:\Users\Administrator\AppData\Local\Programs\Python\Python39\python.exe";
-                                    //var script = ".\\Data\\main.py";
-                                    //psi.Arguments = $"\"{script}\"";
-                                    //psi.UseShellExecute = false;
-                                    //psi.CreateNoWindow = true;
-                                    //psi.RedirectStandardOutput = true;
-                                    //psi.RedirectStandardError = true;
-                                    //var error = "";
-                                    //var results = "";
-                                    //using (var process = Process.Start(psi))
-                                    //{
-                                    //    error = process.StandardError.ReadToEnd();
-                                    //    results = process.StandardOutput.ReadToEnd();
-                                    //}
-                                    //string[] str = results.Split(";");
-                                    //if(str[0] != "")
-                                    //{
-                                    //    ps.spo2 = results.Split(';')[2];
-                                    //    b_SPO2 = true;
-                                    //    ps.hr = results.Split(';')[1];
-                                    //    HR = true;
-                                    ////假資料
-                                    //     double Hand_temp = double.Parse(ps.hand_temp);
-                                    //     Hand_temp = 0.0086 * (Hand_temp - 28.3) + 36.58;
+                                #region Python
+                                //var psi = new ProcessStartInfo();
+                                //psi.FileName = @"C:\Users\Administrator\AppData\Local\Programs\Python\Python39\python.exe";
+                                //var script = ".\\Data\\main.py";
+                                //psi.Arguments = $"\"{script}\"";
+                                //psi.UseShellExecute = false;
+                                //psi.CreateNoWindow = true;
+                                //psi.RedirectStandardOutput = true;
+                                //psi.RedirectStandardError = true;
+                                //var error = "";
+                                //var results = "";
+                                //using (var process = Process.Start(psi))
+                                //{
+                                //    error = process.StandardError.ReadToEnd();
+                                //    results = process.StandardOutput.ReadToEnd();
+                                //}
+                                //string[] str = results.Split(";");
+                                //if (str[0] != "")
+                                //{
+                                //    ps.spo2 = results.Split(';')[2];
+                                //    b_SPO2 = true;
+                                //    ps.hr = results.Split(';')[1];
+                                //    HR = true;
+                                //    //假資料
+                                //    double Hand_temp = double.Parse(ps.hand_temp);
+                                //    Hand_temp = 0.0086 * (Hand_temp - 28.3) + 36.58;
 
-                                    //     ps.spo2 = "97.8";
-                                    //     ps.hr = "78";
-                                    //     ps.hand_temp =Hand_temp.ToString();
-                                     
-                                    //}
-                                    //else
-                                    //    break;
+                                //    ps.spo2 = "97.8";
+                                //    ps.hr = "78";
+                                //    ps.hand_temp = Hand_temp.ToString();
 
-                                    #endregion
-                                }
+                                //}
+                                //else
+                                //    break;
+
+                                #endregion
+                            }
                                 catch
                                 { }
                                 #endregion
